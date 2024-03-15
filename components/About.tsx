@@ -1,6 +1,5 @@
 import Bio from "./Bio";
 import Education, { EducationProps } from "./Education";
-import { Meteors } from "./ui/meteors";
 import { MovingBorderContainer } from "./ui/moving-border";
 
 const educationArray: EducationProps[] = [
@@ -36,20 +35,24 @@ export default function About() {
             <h2 className="text-center text-3xl text-white my-6 font-bold">
                 Education
             </h2>
-            {educationArray.map((item) => (
-                <div className="flex flex-col items-center mb-6 p-2 rounded-3xl bg-gradient-to-t from-[rgba(0,0,0,0.9)] to-[rgba(0,0,0,0.4)] relative overflow-hidden">
-                    <Education
-                        address={item.address}
-                        degree={item.degree}
-                        institute={item.institute}
-                        subject={item.subject}
-                        type={item.type}
-                        year={item.year}
-                        key={item.degree}
-                    />
-                    <Meteors number={20} />
-                </div>
-            ))}
+            <div className="flex flex-col gap-6">
+                {educationArray.map((item) => (
+                    <MovingBorderContainer
+                        duration={5000}
+                        className="bg-gradient-to-t from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.2)] lg:grow lg:shrink-0 basis-[50%]"
+                    >
+                        <Education
+                            address={item.address}
+                            degree={item.degree}
+                            institute={item.institute}
+                            subject={item.subject}
+                            type={item.type}
+                            year={item.year}
+                            key={item.degree}
+                        />
+                    </MovingBorderContainer>
+                ))}
+            </div>
         </div>
     );
 }
