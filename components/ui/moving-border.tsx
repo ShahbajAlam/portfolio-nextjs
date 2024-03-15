@@ -33,7 +33,7 @@ export function MovingBorderContainer({
     return (
         <Component
             className={cn(
-                "bg-transparent relative overflow-hidden ",
+                "bg-transparent relative overflow-hidden",
                 containerClassName
             )}
             style={{
