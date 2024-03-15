@@ -9,12 +9,12 @@ function Bio() {
                 className="w-20 h-20 rounded-full border-2 border-orange-800"
             />
             <p className="text-lg text-gray-100 text-justify">
-                I am a passionate React Frontend developer dedicated to creating
-                engaging and seamless user experiences with a strong foundation
-                in web and app development, I thrive on turning design concepts
-                into responsive and dynamic interfaces. My goal is to contribute
-                innovative solutions and bring ideas to life through clean and
-                efficient code. Let's build something remarkable together!
+                I am a passionate web developer dedicated to creating engaging
+                and seamless user experiences with a strong foundation in web
+                development, I thrive on turning design concepts into responsive
+                and dynamic interfaces. My goal is to contribute innovative
+                solutions and bring ideas to life through clean and efficient
+                code. Let's build something remarkable together!
             </p>
             <a
                 download=""
