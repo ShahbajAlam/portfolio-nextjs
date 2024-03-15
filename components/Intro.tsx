@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
+
 import svg from "@/assets/code.svg";
+import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 
 const words = [
     {
@@ -23,9 +24,9 @@ const name = "<Shahbaj />";
 
 export default function Intro() {
     return (
-        <div className="w-full flex flex-col items-center justify-center px-2 py-24 lg:flex-row lg:w-[80%] lg:max-w-[1000px] lg:py-6">
+        <div className="w-full flex flex-col items-center justify-center px-2 py-24 lg:flex-row lg:w-[80%] lg:max-w-[1000px] lg:py-2 lg:pt-16">
             <div className="basis-6/12 flex flex-col items-center justify-center">
-                <h2 className="text-4xl text-white font-bold md:text-5xl lg:text-6xl">
+                <h2 className="text-4xl text-white font-bold md:text-5xl">
                     Hey there, I am
                 </h2>
                 <h1 className="text-[3.5rem] text-transparent bg-gradient-to-l from-cyan-500 to-blue-700 bg-clip-text font-bold m-0 mt-2 md:text-6xl md:mt-4 lg:text-7xl">

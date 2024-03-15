@@ -44,7 +44,7 @@ function BottomBar() {
                     key={link.src}
                     href={link.to}
                     className={`${
-                        active === link.to
+                        path === link.to
                             ? "scale-[1.2] duration-300"
                             : "opacity-40"
                     }`}
@@ -54,6 +54,7 @@ function BottomBar() {
                         alt={link.alt}
                         width={32}
                         height={32}
+                        priority
                         className="w-8 h-8 md:w-10 md:h-10"
                     />
                 </Link>
