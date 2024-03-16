@@ -1,6 +1,17 @@
 import Bio from "./Bio";
+import Work, { WorkProps } from "./Work";
 import Education, { EducationProps } from "./Education";
 import { MovingBorderContainer } from "./ui/moving-border";
+
+const workArray: WorkProps[] = [
+    {
+        from: "NOV, 2020",
+        to: "APR, 2022",
+        company: "Cognizant",
+        title: "Programmer Analyst",
+        location: "Kolkata, West Bengal",
+    },
+];
 
 const educationArray: EducationProps[] = [
     {
@@ -32,14 +43,36 @@ export default function About() {
             >
                 <Bio />
             </MovingBorderContainer>
+
+            <h2 className="text-center text-3xl text-white my-6 font-bold">
+                Experience
+            </h2>
+            <div className="w-full flex flex-col gap-6">
+                {workArray.map((item) => (
+                    <MovingBorderContainer
+                        duration={5000}
+                        className="bg-gradient-to-t from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.2)]"
+                    >
+                        <Work
+                            company={item.company}
+                            from={item.from}
+                            location={item.location}
+                            title={item.title}
+                            to={item.to}
+                            key={item.from}
+                        />
+                    </MovingBorderContainer>
+                ))}
+            </div>
+
             <h2 className="text-center text-3xl text-white my-6 font-bold">
                 Education
             </h2>
-            <div className="flex flex-col gap-6">
+            <div className="w-full flex flex-col gap-6">
                 {educationArray.map((item) => (
                     <MovingBorderContainer
                         duration={5000}
-                        className="bg-gradient-to-t from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.2)] lg:grow lg:shrink-0 basis-[50%]"
+                        className="bg-gradient-to-t from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.2)]"
                     >
                         <Education
                             address={item.address}
