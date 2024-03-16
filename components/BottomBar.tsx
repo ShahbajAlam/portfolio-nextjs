@@ -38,7 +38,7 @@ function BottomBar() {
     }, [path]);
 
     return (
-        <section className="fixed left-4 right-4 bottom-3 flex justify-between items-center rounded-2xl bg-black/[0.98] px-4 py-3 z-[2] backdrop-blur-sm overflow-hidden md:w-[75%] md:mx-auto md:px-6 md:py-5 lg:hidden">
+        <section className="fixed left-4 right-4 bottom-3 flex justify-between items-center rounded-2xl bg-black/[0.98] px-4 py-3 z-[50] backdrop-blur-sm overflow-hidden md:w-[75%] md:mx-auto md:px-6 md:py-5 lg:hidden">
             {links.map((link) => (
                 <Link
                     key={link.src}

@@ -34,7 +34,6 @@ export default function SkillsPage() {
         <div className="min-h-dvh w-full bg-neutral-950 relative flex flex-col items-center justify-center antialiased">
             <BackgroundBeams />
             <div className="w-full flex flex-col items-center justify-center px-2 py-24 md:w-[75%] lg:w-[80%] lg:max-w-[1000px] lg:pb-4 lg:pt-24">
-                <h1 className="text-4xl text-white">SKILLS</h1>
                 <HoverEffect items={skills} />
             </div>
         </div>
