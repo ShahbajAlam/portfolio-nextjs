@@ -39,7 +39,7 @@ const educationArray: EducationProps[] = [
 function Education() {
     return (
         <div className="w-full">
-            <h2 className="text-center text-3xl text-white my-6 font-bold">
+            <h2 className="text-center text-3xl text-white my-6 font-bold lg:text-left">
                 Education
             </h2>
             <div className="flex flex-col gap-6 lg:flex-row">

@@ -15,7 +15,7 @@ const certificateArray: CertificateProps[] = [
         url: "https://www.hackerrank.com/certificates/d4b5c4653436",
     },
     {
-        id: "4fd023ca25a74ed0ebb33f3342323f5b",
+        id: "M42E6VXM4L2T",
         provider: "Cousera",
         title: "Meta Front-End Developer",
         url: "https://coursera.org/share/4fd023ca25a74ed0ebb33f3342323f5b",
@@ -25,7 +25,7 @@ const certificateArray: CertificateProps[] = [
 function Certificate() {
     return (
         <div className="w-full">
-            <h2 className="text-center text-3xl text-white my-6 font-bold">
+            <h2 className="text-center text-3xl text-white my-6 font-bold lg:text-left">
                 Certifications
             </h2>
             <div className="flex flex-col gap-6 lg:flex-row">
