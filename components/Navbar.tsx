@@ -36,7 +36,7 @@ function Navbar() {
                     key={item.to}
                     href={item.to}
                     className={`link ${
-                        item.to === active ? "text-cyan-400" : ""
+                        item.to === path ? "text-cyan-400" : ""
                     }`}
                 >
                     {item.title}
