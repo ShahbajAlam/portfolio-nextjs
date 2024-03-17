@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     title: "Shahbaj Alam | Portfolio",
     description:
         "The portfolio website of Shahbaj Alam, a web developer from India",
+    
 };
 
 export default function RootLayout({
