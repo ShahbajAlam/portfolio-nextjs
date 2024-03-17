@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import BottomBar from "@/components/BottomBar";
 import Navbar from "@/components/Navbar";
+import Template from "./template";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,7 +11,6 @@ export const metadata: Metadata = {
     title: "Shahbaj Alam | Portfolio",
     description:
         "The portfolio website of Shahbaj Alam, a web developer from India",
-    
 };
 
 export default function RootLayout({
@@ -20,9 +20,11 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={inter.className}>
+            <body
+                className={`${inter.className} min-h-dvh w-full bg-black/[0.96] antialiased bg-grid-white/[0.04]`}
+            >
                 <Navbar />
-                {children}
+                <Template>{children}</Template>
                 <BottomBar />
             </body>
         </html>
