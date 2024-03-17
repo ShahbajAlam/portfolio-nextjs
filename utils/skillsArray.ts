@@ -46,36 +46,31 @@ const skills = [
     },
     {
         id: 10,
-        name: "Express",
-        image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
-    },
-    {
-        id: 11,
         name: "NextJS",
         image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
     },
     {
-        id: 12,
+        id: 11,
         name: "MongoDB",
         image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg",
     },
     {
-        id: 13,
+        id: 12,
         name: "Python",
         image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
     },
     {
-        id: 14,
+        id: 13,
         name: "FastAPI",
         image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg",
     },
     {
-        id: 15,
+        id: 14,
         name: "VS Code",
         image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
     },
     {
-        id: 16,
+        id: 15,
         name: "GitHub",
         image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
     },
