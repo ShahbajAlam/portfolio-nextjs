@@ -9,8 +9,13 @@ export default function ProjectsPage() {
         <div className="min-h-dvh w-full flex items-center justify-center bg-black/[0.96] antialiased bg-grid-white/[0.04] relative overflow-hidden px-2 py-24 lg:pb-4 lg:pt-24">
             <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:w-[80%] lg:mx-auto lg:max-w-[1000px]">
                 {projects.map((item, i) => (
-                    <CardContainer key={i} className="inter-var md:w-[90%]">
-                        <CardBody className="bg-gray-950 relative group/card border-black/[0.1] rounded-xl p-6 border h-auto">
+                    <CardContainer
+                        key={i}
+                        className={`inter-var md:w-[90%] ${
+                            i % 2 === 0 ? "ml-auto" : "mr-auto"
+                        }`}
+                    >
+                        <CardBody className="bg-black relative group/card border-white/[0.2] rounded-xl p-6 border h-auto">
                             <CardItem
                                 translateZ="50"
                                 className="text-xl font-bold text-white"
