@@ -21,7 +21,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${inter.className} min-h-dvh w-full bg-black/[0.96] antialiased bg-grid-white/[0.04]`}
+                className={`${inter.className} min-h-dvh w-full bg-black/[0.96] antialiased`}
             >
                 <Navbar />
                 <Template>{children}</Template>
