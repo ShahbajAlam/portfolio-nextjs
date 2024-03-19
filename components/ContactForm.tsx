@@ -55,18 +55,17 @@ function ContactForm() {
         try {
             setLoading(true);
 
-            const res = await fetch(
-                "https://contact-me-api.vercel.app/api/contact",
-                {
-                    method: "POST",
-                    body: JSON.stringify({
-                        fname: formData.name,
-                        email: formData.email,
-                        message: formData.message,
-                    }),
-                }
-            );
+            const res = await fetch("/api/contact", {
+                method: "POST",
+                body: JSON.stringify({
+                    fname: formData.name,
+                    email: formData.email,
+                    message: formData.message,
+                }),
+            });
+            console.log(res);
             const data = await res.json();
+            console.log(data);
             if (data.id) successToast("Message is sent successfully");
         } catch (error) {
             if (error instanceof Error) errorToast(error.message);
