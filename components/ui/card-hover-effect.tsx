@@ -74,18 +74,16 @@ export const Card = ({
     children: React.ReactNode;
 }) => {
     return (
-        <MovingBorderContainer duration={2500}>
-            <div
-                className={cn(
-                    "rounded-2xl h-full w-full p-4 overflow-hidden bg-black relative z-20",
-                    className
-                )}
-            >
-                <div className="relative z-20">
-                    <div className="p-4">{children}</div>
-                </div>
+        <div
+            className={cn(
+                "rounded-2xl h-full w-full p-4 overflow-hidden bg-black relative z-20",
+                className
+            )}
+        >
+            <div className="relative z-20">
+                <div className="p-4">{children}</div>
             </div>
-        </MovingBorderContainer>
+        </div>
     );
 };
 export const CardTitle = ({
