@@ -43,7 +43,7 @@ function Social({ src, alt, link }: SocialProps) {
             rel="noopener noreferrer"
             className="relative w-8 h-8 lg:w-10 lg:h-10 hover:brightness-50"
         >
-            <Image src={src} alt={alt} fill />
+            <Image src={src} alt={alt} fill priority />
         </a>
     );
 }
