@@ -11,9 +11,10 @@ function Address() {
         <MovingBorderContainer
             duration={5000}
             className="w-full flex flex-col gap-4 bg-gradient-to-t from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.2)] lg:flex-row lg:p-8"
+            containerClassName="w-full"
         >
             <address className="flex justify-center items-center w-full text-gray-100 not-italic">
-                <div className="flex flex-col w-full gap-4 px-4 py-6 rounded-3xl">
+                <div className="flex flex-col w-full gap-4 px-4 py-6 rounded-3xl lg:gap-8">
                     <div className="flex items-center justify-start gap-2 text-lg">
                         <Image
                             src={house.src}
@@ -49,7 +50,7 @@ function Address() {
                         </a>
                     </div>
 
-                    <div className="w-[80%] mx-auto mt-4 flex justify-between items-center">
+                    <div className="w-[80%] mx-auto mt-4 flex justify-between items-center lg:w-full">
                         {socialObject.map((item) => (
                             <Social
                                 key={item.src}

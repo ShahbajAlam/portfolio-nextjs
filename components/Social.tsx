@@ -41,9 +41,9 @@ function Social({ src, alt, link }: SocialProps) {
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-8 h-8"
+            className="relative w-8 h-8 lg:w-10 lg:h-10 hover:brightness-50"
         >
-            <Image src={src} alt={alt} width={32} height={32} />
+            <Image src={src} alt={alt} fill />
         </a>
     );
 }

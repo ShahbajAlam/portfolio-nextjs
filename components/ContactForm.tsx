@@ -64,9 +64,7 @@ function ContactForm() {
                     message: formData.message,
                 }),
             });
-            console.log(res);
             const data = await res.json();
-            console.log(data);
             if (data.id) successToast("Message is sent successfully");
         } catch (error) {
             if (error instanceof Error) errorToast(error.message);
@@ -81,6 +79,7 @@ function ContactForm() {
         <MovingBorderContainer
             duration={5000}
             className="w-full flex flex-col gap-4 bg-gradient-to-t from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.2)] lg:flex-row lg:p-8"
+            containerClassName="w-full"
         >
             <div className="flex flex-col justify-center items-center w-full text-gray-100">
                 <form
