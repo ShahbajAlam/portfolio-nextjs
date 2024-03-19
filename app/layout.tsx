@@ -4,6 +4,7 @@ import "./globals.css";
 import BottomBar from "@/components/BottomBar";
 import Navbar from "@/components/Navbar";
 import Template from "./template";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
             <body
                 className={`${inter.className} min-h-dvh w-full bg-black/[0.96] antialiased`}
             >
+                <Toaster />
                 <Navbar />
                 <Template>{children}</Template>
                 <BottomBar />
