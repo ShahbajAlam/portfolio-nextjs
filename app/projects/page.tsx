@@ -54,6 +54,7 @@ export default function ProjectsPage() {
                                     <Image
                                         src={github}
                                         width={32}
+                                        height={32}
                                         alt="Github Logo"
                                         className="aspect-square"
                                     />

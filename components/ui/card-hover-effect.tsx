@@ -2,6 +2,7 @@ import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
+import { MovingBorderContainer } from "./moving-border";
 
 export const HoverEffect = ({
     items,
@@ -33,7 +34,7 @@ export const HoverEffect = ({
                     <AnimatePresence>
                         {hoveredIndex === idx && (
                             <motion.span
-                                className="absolute inset-0 h-full w-full bg-cyan-600 dark:bg-slate-800/[0.2] block  rounded-3xl"
+                                className="absolute inset-0 h-full w-full bg-cyan-800 dark:bg-slate-800/[0.2] block  rounded-3xl"
                                 layoutId="hoverBackground"
                                 initial={{ opacity: 0 }}
                                 animate={{
@@ -73,16 +74,18 @@ export const Card = ({
     children: React.ReactNode;
 }) => {
     return (
-        <div
-            className={cn(
-                "rounded-2xl h-full w-full p-4 overflow-hidden bg-black relative z-20",
-                className
-            )}
-        >
-            <div className="relative z-20">
-                <div className="p-4">{children}</div>
+        <MovingBorderContainer duration={2500}>
+            <div
+                className={cn(
+                    "rounded-2xl h-full w-full p-4 overflow-hidden bg-black relative z-20",
+                    className
+                )}
+            >
+                <div className="relative z-20">
+                    <div className="p-4">{children}</div>
+                </div>
             </div>
-        </div>
+        </MovingBorderContainer>
     );
 };
 export const CardTitle = ({
