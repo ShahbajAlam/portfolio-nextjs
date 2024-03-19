@@ -18,9 +18,7 @@ export default function ProjectsPage() {
                     >
                         <CardContainer
                             key={i}
-                            className={`inter-var md:w-[90%] ${
-                                i % 2 === 0 ? "ml-auto" : "mr-auto"
-                            }`}
+                            className={`inter-var md:w-[90%]`}
                         >
                             <CardBody className="relative group/card rounded-3xl p-6 h-auto">
                                 <CardItem
