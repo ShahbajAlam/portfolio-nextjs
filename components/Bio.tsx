@@ -1,6 +1,7 @@
 import Image from "next/image";
 
-import man from "@/assets/man.webp";
+import dp from "@/assets/dp.jpg";
+
 import { MovingBorderContainer } from "./ui/moving-border";
 
 function Bio() {
@@ -11,11 +12,11 @@ function Bio() {
         >
             <div className="lg:basis-[30%]">
                 <Image
-                    src={man.src}
+                    src={dp.src}
                     alt="profile picture"
                     width={80}
                     height={80}
-                    className="w-20 h-20 rounded-full border-2 border-orange-800 lg:w-40 lg:h-40"
+                    className="w-20 h-20 rounded-full border-2 lg:w-40 lg:h-40"
                 />
             </div>
             <div className="flex flex-col gap-4 lg:basis-[70%]">
