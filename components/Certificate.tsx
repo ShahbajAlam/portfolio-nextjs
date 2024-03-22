@@ -49,7 +49,7 @@ function Certificate() {
                                 <a
                                     href={item.url}
                                     target="_blank"
-                                    className="self-end bg-gradient-to-r from-[#3e4e6e] to-[#212e41] rounded-xl px-4 py-2 font-semibold text-xl my-2"
+                                    className="self-end bg-gradient-to-r from-[#3e4e6e] to-[#212e41] rounded-xl px-4 py-2 font-semibold text-xl my-2 active:scale-95 duration-200"
                                 >
                                     View the certificate
                                 </a>
