@@ -54,41 +54,46 @@ const skills = [
     },
     {
         id: 11,
+        name: "Sanity",
+        image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sanity/sanity-original.svg",
+    },
+    {
+        id: 12,
         name: "NextJS",
         image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
     },
     {
-        id: 12,
+        id: 13,
         name: "MongoDB",
         image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg",
     },
     {
-        id: 13,
+        id: 14,
         name: "Python",
         image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
     },
     {
-        id: 14,
+        id: 15,
         name: "FastAPI",
         image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg",
     },
     {
-        id: 15,
+        id: 16,
         name: "VS Code",
         image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
     },
     {
-        id: 16,
+        id: 17,
         name: "Git",
         image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
     },
     {
-        id: 17,
+        id: 18,
         name: "NPM",
         image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg",
     },
     {
-        id: 18,
+        id: 19,
         name: "Vercel",
         image: vercel,
     },
