@@ -1,3 +1,4 @@
+import blog from "@/assets/blog.png";
 import budget from "@/assets/budget.png";
 import grocery from "@/assets/grocery.png";
 import chatbot from "@/assets/chatbot.png";
@@ -9,6 +10,13 @@ const projects = [
         href: "https://shahbajalam-grocery-store.vercel.app/",
         github: "https://github.com/ShahbajAlam/grocery-store",
         image: grocery.src,
+    },
+    {
+        title: "Personal Blog",
+        tech: "NextJS, Tailwind CSS, DaisyUI, Sanity CMS",
+        href: "https://shahbajalam-blog.vercel.app/",
+        github: "https://github.com/ShahbajAlam/sanity-blog",
+        image: blog.src,
     },
     {
         title: "Chat Bot",
