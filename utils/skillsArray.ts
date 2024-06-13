@@ -1,5 +1,4 @@
 import vercel from "@/assets/vercel.svg";
-import express from "@/assets/express.svg";
 
 const skills = [
     {
@@ -33,11 +32,6 @@ const skills = [
         image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
     },
     {
-        id: 7,
-        name: "Redux",
-        image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
-    },
-    {
         id: 8,
         name: "Firebase",
         image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
@@ -46,11 +40,6 @@ const skills = [
         id: 9,
         name: "NodeJS",
         image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg",
-    },
-    {
-        id: 10,
-        name: "Express",
-        image: express,
     },
     {
         id: 11,
