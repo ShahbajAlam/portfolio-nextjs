@@ -20,6 +20,13 @@ const workArray: WorkProps[] = [
         title: "Programmer Analyst",
         location: "Kolkata, West Bengal",
     },
+    {
+        from: "SEPT, 2024",
+        to: "-",
+        company: "byteXL",
+        title: "Technical Trainer",
+        location: "Dehradun, Uttarakhand",
+    },
 ];
 
 function Work() {
