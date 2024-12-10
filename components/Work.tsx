@@ -25,7 +25,7 @@ const workArray: WorkProps[] = [
         to: "",
         company: "byteXL",
         title: "Technical Trainer",
-        location: "Dehradun, Uttarakhand",
+        location: "Remote",
     },
 ];
 
