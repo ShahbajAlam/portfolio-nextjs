@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     title: "Shahbaj Alam | Portfolio",
     description:
         "The portfolio website of Shahbaj Alam, a web developer from India",
+    verification: {
+    google: "rzOPzc8MrogWdEYLvuSZ7m-BzOhZpg1n9SYEvHlemzM",
+  },
 };
 
 export default function RootLayout({
