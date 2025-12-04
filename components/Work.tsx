@@ -22,10 +22,17 @@ const workArray: WorkProps[] = [
     },
     {
         from: "SEPT, 2024",
-        to: "",
-        company: "byteXL",
+        to: "AUG, 2025",
+        company: "ByteXL",
         title: "Technical Trainer",
-        location: "Remote",
+        location: "Hyderabad, Telengana",
+    },
+    {
+        from: "OCT, 2025",
+        to: "",
+        company: "Cineverse",
+        title: "Web Developer",
+        location: "Kolkata, West Bengal",
     },
 ];
 
